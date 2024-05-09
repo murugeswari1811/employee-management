@@ -1,0 +1,33 @@
+/* WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 2px; 
+   /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(to right, #e4fc0c, #ef0be3) /* Color of the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+  }
+  #element-class::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers (e.g., Chrome, Safari) */
+}
+
+#element-class {
+    overflow: auto; /* Enable scrolling */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
